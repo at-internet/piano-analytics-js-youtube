@@ -21,8 +21,6 @@ class PAYoutubePlayer {
     this.paCustomParams.av_content_duration = this.instanciatedPlayer.getDuration();
     this.paCustomParams.av_broadcasting_type = videoData.isLive ? "Live" : "Clip";
     this.videoMedia.setProps(this.paCustomParams);
-
-    this.instanciatedPlayer.playVideo();
   };
 
   onPlayerStateChange = (event) => {
